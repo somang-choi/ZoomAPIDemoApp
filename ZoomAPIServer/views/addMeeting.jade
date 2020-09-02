@@ -1,0 +1,35 @@
+extends layout
+block body
+  div
+    #data-container.col-lg-30
+      .well-nm
+        .adduser.well-nm
+          form.bs-example.form-horizontal(method='post', action='/createMeeting')
+            fieldset
+              legend  Create a Zoom Meeting
+              .form-group
+                label.col-lg-1.control-label(for='id') Host ID
+                .col-lg-18
+                  input#xxx.form-control(
+                    placeholder='Your email ID',
+                    name='id',
+                    type='e-mail',
+                    value=id)
+              .form-group
+                label.col-lg-1.control-label(for='topic') Topic
+                .col-lg-18
+                  input#xxx.form-control(
+                    name='topic',
+                    placeholder='Hyosung TNS Meeting',
+                    type='text',
+                    value=topic)
+              .form-group
+                label.col-lg-1.control-label(for='pw') Password
+                .col-lg-18
+                  input#xxx.form-control(
+                    name='pw',
+                    type='password',
+                    value=pw)
+              .form-group
+                .col-lg-10.col-lg-offset-4
+                  input.btn.btn-success(type='submit', value='Submit')

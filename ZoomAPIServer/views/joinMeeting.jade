@@ -1,0 +1,10 @@
+extends layout
+
+block body
+  #welcome.jumbotron
+    h3  Meeting created!
+    h4
+    h4  Meeting ID: #{meeting.id}
+    h4  Topic: #{meeting.topic}
+    h4  Host: #{meeting.host_email}
+    h4  Join URL #{meeting.join_url}
